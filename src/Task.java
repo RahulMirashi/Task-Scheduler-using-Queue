@@ -11,6 +11,16 @@ public class Task {
         this.arrivalTime = System.currentTimeMillis();
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public long getArrivalTime() {
+        return arrivalTime;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (arrived at " + arrivalTime + ")";
     }
 }
