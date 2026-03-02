@@ -16,10 +16,14 @@ Test/ → Performance experiments
 
 ## How to Run
 1. Compile source files:
+   ```bash
    javac *.java
+   ```
 
-2. Run scheduler:
+3. Run scheduler:
+   ```bash
    java TaskScheduler
+   ```
 
 ## Complexity Analysis
 Enqueue: O(1)  
@@ -27,5 +31,5 @@ Dequeue: O(1)
 Space: O(n)
 
 ## Author
-Rahul Mirashi 
-Soham Maji
+* **Rahul Mirashi**
+* **Soham Maji**
