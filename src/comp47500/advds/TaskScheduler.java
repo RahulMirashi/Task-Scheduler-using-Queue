@@ -1,3 +1,4 @@
+package comp47500.advds;
 /**
  * Simulates a task scheduling system using a queue
  */
@@ -5,14 +6,14 @@ public class TaskScheduler {
 
     public static void main(String[] args) {
 
-        MyQueue<Task> taskQueue = new MyQueue<>();
+        MyLinkedQueue<Task> taskQueue = new MyLinkedQueue<>();
 
         System.out.println("Adding tasks to scheduler...\n");
 
-        taskQueue.enqueue(new Task("Print Research Paper"));
-        taskQueue.enqueue(new Task("Compile Java Program"));
-        taskQueue.enqueue(new Task("Send Email Report"));
-        taskQueue.enqueue(new Task("Backup Files"));
+        taskQueue.enqueue(new Task("Print Research Paper", 10));
+        taskQueue.enqueue(new Task("Compile Java Program", 5));
+        taskQueue.enqueue(new Task("Send Email Report", 3));
+        taskQueue.enqueue(new Task("Backup Files", 7));
 
         System.out.println("Processing tasks...\n");
 
